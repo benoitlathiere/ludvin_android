@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListePoi" >
+
+    <ImageButton
+        android:id="@+id/btnRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+
+        <ImageView
+        	android:id="@+id/imageView1"
+        	android:layout_width="28dp"
+        	android:layout_height="28dp"
+        	android:src="@drawable/pin_black_small" />
+
+        <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Les POI atentour :"
+        	android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+    </LinearLayout>
+
+</LinearLayout>

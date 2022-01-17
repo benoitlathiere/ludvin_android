@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Visiteur</string>
+    <string name="menu_settings">Settings</string>
+    <string name="LUDVIN">LUD\'VIN</string>
+    <string name="Auteurs">Auteurs : \nJ. Bodard, H. Boultache, F. Laazioua, B. Lathière</string>
+    <string name="Universite">Université Paris 8\nMaster 2 \&quot;Technologie et Handicap\&quot; \nProjet technique - février 2013</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_accueil">Votre localisation</string>
+
+    <dimen name="btn_big">60px</dimen>
+
+    <string name="title_activity_liste_zones">Liste des zones</string>
+    <string name="title_activity_aide">Aide</string>
+    <string name="title_activity_commande_vocale">CommandeVocale</string>
+    <string name="title_activity_liste_poi">ListePoi</string>
+    <string name="title_activity_carte">Carte</string>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ludvin.masterhandi2013.visiteur"
+    android:versionCode="5"
+    android:versionName="0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+    
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+	
+<!--  application.androidname rajouté selon 
+	http://stackoverflow.com/questions/4572338/extending-application-to-share-variables-globally
+ -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <application
+        android:name="org.ludvin.masterhandi2013.visiteur.GlobalVars" 
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.Demarrage"
+            android:label="@string/app_name" >
+            <intent-filter android:label="@string/app_name" android:icon="@drawable/logo_petit" android:logo="@drawable/logo_petit">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.Accueil"
+            android:label="@string/title_activity_accueil" >
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.ListeZones"
+            android:label="@string/title_activity_liste_zones" >
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.Aide"
+            android:label="@string/title_activity_aide" >
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.CommandeVocale"
+            android:label="@string/title_activity_commande_vocale" >
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.ListePoi"
+            android:label="@string/title_activity_liste_poi" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="org.ludvin.masterhandi2013.visiteur.Carte"
+            android:label="@string/title_activity_carte" >
+        </activity>
+        <activity 
+        	android:name="org.ludvin.masterhandi2013.visiteur.VoiceRecognition" 
+        	android:label="Commande Vocale" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

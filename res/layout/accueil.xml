@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    style="@style/AppBaseTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Accueil" >
+
+    <LinearLayout
+        android:id="@+id/LL_icones1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/btnZones"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:contentDescription="Liste des zones alentours"
+            android:src="@drawable/loupe_black_big" />
+
+        <ImageButton
+            android:id="@+id/btnPoi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:contentDescription="Liste des points d&apos;intérêt alentours"
+            android:src="@drawable/pin_black_big" />
+    </LinearLayout>
+
+    <LinearLayout
+    	android:id="@+id/LL_icones2"
+    	android:layout_width="match_parent"
+    	android:layout_height="100dp"
+    	android:layout_weight="0.00" >
+
+    	<ImageButton
+    		android:id="@+id/btnCommandeVocale"
+    		android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:layout_margin="5dp"
+    		android:contentDescription="Activer la commande vocale"
+    		android:src="@drawable/micro_black_small" />
+
+    	<ImageButton
+    		android:id="@+id/btnCarte"
+    		android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:layout_margin="5dp"
+    		android:contentDescription="Voir sa localisation sur la carte des lieux"
+    		android:src="@drawable/carte_black_small" />
+
+    	<Button
+    		android:id="@+id/btnTest"
+    		android:layout_width="84dp"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.87"
+    		android:text="test server"
+    		android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_localisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votre localisation :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+        	android:id="@+id/TV_localisation"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="Votre localisation actuelle"
+        	android:hint="- pas de localisation -"
+        	android:text=" "
+        	android:textAppearance="?android:attr/textAppearance"
+        	android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>
